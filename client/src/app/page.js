@@ -35,9 +35,11 @@ export default function App() {
             onChange={(e) => setPassword(e.target.value)} />
         </div>
         <div className="mt-3.5 flex mx-auto">
+        <a href="/home">
           <Button color="primary" variant="ghost" onClick={handleClick} isLoading={isLoading}>
             {isLoading ? "Logging In" : "Login"}
           </Button>
+        </a>  
         </div>
         <div className="mx-auto mt-3.5">
           <p>Don't have an account?</p>
